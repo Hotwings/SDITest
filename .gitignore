@@ -1,7 +1,2 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/SDI_Test/SDI_Test/obj/Debug
+﻿/SDI_Test/SDI_Test/obj/Debug
 /SDI_Test/.vs
-SDI_Test/SDI_Test/App_Data

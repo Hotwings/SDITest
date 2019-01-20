@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SDI_Test", "SDI_Test\SDI_Test.csproj", "{BF545E42-B3F3-408E-9925-C400DE51F9E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF545E42-B3F3-408E-9925-C400DE51F9E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF545E42-B3F3-408E-9925-C400DE51F9E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF545E42-B3F3-408E-9925-C400DE51F9E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF545E42-B3F3-408E-9925-C400DE51F9E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD842E5D-D042-4344-9EE7-0C548AA60187}
+	EndGlobalSection
+EndGlobal

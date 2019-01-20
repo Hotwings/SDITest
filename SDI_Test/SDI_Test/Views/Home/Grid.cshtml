@@ -1,0 +1,32 @@
+﻿@using System.Collections.Generic;
+@using SDI_Test.Models;
+@model List<FormModel>
+@{
+	ViewBag.Title = "Grid";
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Grid</h2>
+
+<table class="table table-striped table-bordered">
+	<thead>
+		<tr>
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Date of Birth</td>
+			<td>GPA</td>
+		</tr>
+	</thead>
+	<tbody>
+		@*Iterate through all form data and add it to the table*@
+		@foreach(FormModel m in Model)
+		{
+			<tr>
+				<td>@m.FirstName</td>
+				<td>@m.LastName</td>
+				<td>@m.DateOfBirth.ToShortDateString()</td>
+				<td>@m.GPA</td>
+			</tr>
+		}
+	</tbody>
+</table>

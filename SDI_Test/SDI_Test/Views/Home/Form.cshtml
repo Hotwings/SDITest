@@ -1,0 +1,50 @@
+﻿@using SDI_Test.Models
+@model FormModel
+@{
+    ViewBag.Title = "Form";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Head{
+    <script>
+        var app = new Vue(
+            {
+
+            });
+    </script>
+}
+
+<h2>Form</h2>
+
+@using (Html.BeginForm("Form", "Home", FormMethod.Post))
+{
+	@Html.AntiForgeryToken()
+	@Html.HiddenFor(m=>m.ID)
+    <div class="form-group">
+        @Html.LabelFor(m => m.FirstName)
+        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m=>m.FirstName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.LastName)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.DateOfBirth)
+        @Html.TextBoxFor(m => m.DateOfBirth, "{0:d}", new { @class = "form-control", data_provide = "datepicker" })
+        @Html.ValidationMessageFor(m => m.DateOfBirth)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.GPA)
+        @Html.TextBoxFor(m => m.GPA, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.GPA)
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+}
